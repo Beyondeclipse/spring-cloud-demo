@@ -1,0 +1,12 @@
+server:
+  port: 8766
+spring:
+  application:
+    name: eureka-ribbon-stores-client
+
+stores:
+  ribbon:
+    listOfServers: io.bigbangbug,google.com
+ribbon:
+  eureka:
+    enabled: false
