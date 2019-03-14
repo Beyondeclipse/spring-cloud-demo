@@ -1,0 +1,20 @@
+---
+server:
+  port: 8769
+spring:
+  application:
+    name: service-turbine
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/
+#      defaultZone: http://eureka.springcloud.cn/eureka/
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: eureka-ribbon-client, eureka-feign-client
+  clusterNameExpression: "'default'"
+
+# 指定接收 hystrix dashbox 服务监控信息url路径
+turbine.instanceUrlSuffix.default: hystrix.stream
+
