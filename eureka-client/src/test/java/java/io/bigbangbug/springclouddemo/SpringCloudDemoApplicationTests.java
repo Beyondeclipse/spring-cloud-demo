@@ -1,4 +1,4 @@
-package io.bigbangbug.springclouddemo;
+package java.io.bigbangbug.springclouddemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
