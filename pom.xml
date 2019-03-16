@@ -10,6 +10,7 @@
     <module>eureka-ribbon-stores-client</module>
     <module>eureka-feign-client</module>
     <module>eureka-monitor-client</module>
+    <module>eureka-zuul-client</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>

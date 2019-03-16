@@ -1,0 +1,11 @@
+server:
+  port: 8768
+spring:
+  application:
+    name: eureka-zuul-client
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/
+#      defaultZone: http://eureka.springcloud.cn/eureka/
